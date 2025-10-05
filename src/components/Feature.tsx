@@ -40,7 +40,7 @@ const ListFeature = ({feature, className}: { feature: MdxEntry, className?: stri
 	const Tag = hasContent ? Link : 'div' as any;
 
 	return (
-		<Tag {...linkProps} className={clsx(
+		<div className={clsx(
 			"flex flex-col gap-y-2 mb-4",
 			hasContent && "hover:opacity-90",
 			className
@@ -49,15 +49,17 @@ const ListFeature = ({feature, className}: { feature: MdxEntry, className?: stri
 				<MDXComponents.img src={feature.hero.src}/>
 			)}
 
-			<h3 className={clsx(
-				"font-extrabold text-primary",
-				feature.hero && "mt-2",
-				hasContent && "text-accent-1!"
-			)}>{feature.title}</h3>
+			<Tag {...linkProps}>
+				<h4 className={clsx(
+					"font-extrabold text-primary",
+					feature.hero && "mt-2",
+					hasContent && "text-accent-1!"
+				)}>{feature.title}</h4>
 
-			{feature.description && (
-				<p className={"text-sm text-muted-foreground"}>{feature.description}</p>
-			)}
-		</Tag>
+				{feature.description && (
+					<p className={"text-sm text-muted-foreground"}>{feature.description}</p>
+				)}
+			</Tag>
+		</div>
 	);
 };

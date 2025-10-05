@@ -1,0 +1,19 @@
+export const meta = {
+	title      : 'Use proxies for sending',
+	description: 'Be immune to IP address based sending limits by using proxies (HTTP or SOCKS5) for sending your email campaigns.',
+	feature    : {
+		group: "general",
+		order: 4,
+	}
+}
+
+By using proxies for sending emails, you can bypass restrictions imposed by
+your hosting provider and maintain a dynamic sending environment. This
+approach helps ensure that your emails reach their intended recipients
+without being hindered by IP address based limitations.
+
+Each proxy will be regularly checked against a list of public blacklists to
+ensure optimal deliverability. If a proxy is found on any blacklist, it will
+be automatically removed from the pool of available proxies. This proactive
+measure helps maintain a high standard of email deliverability and reduces
+the risk of your emails being marked as spam.

@@ -5,10 +5,10 @@ import * as React from "react";
 import type {Metadata} from 'next';
 
 export async function generateMetadata({params}: {
-	params: Promise<{ slug: string[] }>
+	params: Promise<{ slug: string }>
 }): Promise<Metadata> {
 	const {slug} = await params;
-	const post = await getPost(slug.join('/'), "updates");
+	const post = await getPost(slug, "updates");
 
 	if (!post) {
 		return {
@@ -17,16 +17,16 @@ export async function generateMetadata({params}: {
 	}
 
 	return {
-		title: `${post.title} - Updates`,
+		title      : `${post.title} - Updates`,
 		description: post.description
 	};
 }
 
 export default async function Page({params}: {
-	params: Promise<{ slug: string[] }>
+	params: Promise<{ slug: string }>
 }) {
 	const {slug} = await params;
-	const post = await getPost(slug.join('/'), "updates");
+	const post = await getPost(slug, "updates");
 
 	if (!post) {
 		// return 404 page

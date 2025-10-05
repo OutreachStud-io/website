@@ -80,7 +80,7 @@ export function FixedSidebar(
 	}) {
 	return (
 		<div className="relative flex-none overflow-hidden px-6 lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex lg:px-0 ">
-			<div className="absolute border-b xl:hidden bg-background-darker inset-0"></div>
+			<div className="absolute border-b lg:hidden bg-background-darker inset-0"></div>
 
 			<div className="relative flex w-full lg:pointer-events-auto lg:mr-[calc(max(2rem,50%-38rem)+40rem)] lg:min-w-lg lg:overflow-x-hidden lg:overflow-y-auto lg:pl-[max(4rem,calc(50%-38rem))]">
 				<div className="-z-1 hidden xl:block absolute bg-background-darker inset-0"></div>

@@ -53,6 +53,8 @@ export type MdxEntryFeature = {
 
 export type MdxHero = {
 	src: string
+	height: number
+	width: number
 	// Whether to show the hero image on the page (defaults to true)
 	hideOnPage?: boolean
 	hideOnList?: boolean

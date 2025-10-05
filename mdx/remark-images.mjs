@@ -8,22 +8,19 @@ export function remarkImages() {
 			if (node.url.startsWith('@/media/images/')) {
 				const imagePath = node.url.replace('@/media/images/', '');
 
+				// keep in mind that this import cannot work witn pngs or gifs
 				const promise = import(`../src/media/images/${imagePath}`)
 					.then((module) => {
 						node.url = module.default.src;
 						// Add width/height from imported image
 						node.data = {
 							...node.data,
-							hProperties: {
-								...node.data?.hProperties,
-								width : module.default.width,
-								height: module.default.height,
-							},
 						};
 					})
 					.catch((err) => {
-						console.warn(`Failed to import image: ${imagePath}`, err);
+						console.log(`Failed to import image: ${imagePath}`, err);
 					});
+
 				imagePromises.push(promise);
 			}
 		});

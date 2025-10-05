@@ -68,36 +68,15 @@ export function remarkImageGallery() {
 
 		// Resolve images for all galleries
 		for (const {parent, index, images, displayType, options} of nodesToProcess) {
-			// Resolve image URLs like remarkImages does
-			const imagePromises = images.map(async (img) => {
-				if (img.url.startsWith('@/media/images/')) {
-					const imagePath = img.url.replace('@/media/images/', '');
-					try {
-						const module = await import(`../src/media/images/${imagePath}`);
-						return {
-							src   : module.default.src || module.default,
-							alt   : img.alt || '',
-							title : img.title || '',
-							width : module.default.width,
-							height: module.default.height
-						};
-					} catch (err) {
-						console.warn(`Failed to import image: ${imagePath}`, err);
-						return {
-							src  : img.url,
-							alt  : img.alt || '',
-							title: img.title || ''
-						};
-					}
-				}
-				return {
-					src  : img.url,
-					alt  : img.alt || '',
-					title: img.title || ''
-				};
-			});
-
-			const resolvedImages = await Promise.all(imagePromises);
+			// Images are already resolved by remarkImages plugin
+			// Extract image data from the processed nodes
+			const resolvedImages = images.map(img => ({
+				src: img.url,
+				alt: img.alt || '',
+				title: img.title || '',
+				width: img.data?.hProperties?.width || 1200,
+				height: img.data?.hProperties?.height || 800
+			}));
 
 			// Replace the paragraph with the gallery
 			parent.children[index] = {

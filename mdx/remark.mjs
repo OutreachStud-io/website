@@ -6,6 +6,6 @@ import {remarkImageGallery} from './remark-image-gallery.mjs'
 export const remarkPlugins = [
 	mdxAnnotations.remark,
 	remarkGfm,
-	remarkImageGallery,
 	remarkImages,
+	remarkImageGallery,
 ]

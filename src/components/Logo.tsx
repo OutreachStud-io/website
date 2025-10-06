@@ -1,11 +1,7 @@
-import {useId} from 'react';
 import Image from 'next/image';
 import LogoSVG from '@/media/images/logo-small.svg';
-import {SiteTitle} from "../../constants";
 
 export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
-	let id = useId();
-
 	return (
 		<div className={"flex items-center gap-1 text-2xl text-primary"}>
 			<Image

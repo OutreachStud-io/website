@@ -8,7 +8,10 @@ import {Intro, IntroFooter} from '@/components/Intro';
 export function Layout({children}: { children: React.ReactNode }) {
 	return (
 		<>
-			<FixedSidebar main={<Intro/>} footer={<IntroFooter/>} header={<Link href="/">
+			<FixedSidebar main={<Intro/>} footer={<IntroFooter/>} header={<Link
+				href="/"
+				className={"inline-block mx-auto mt-10 lg:mt-0 lg:mx-0"}
+			>
 				<Logo className="inline-block h-8 w-auto mx-auto"/>
 			</Link>}/>
 

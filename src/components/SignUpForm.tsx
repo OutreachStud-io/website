@@ -50,9 +50,9 @@ export function SignUpForm() {
 			return (
 				<Alert className={"mt-4"}>
 					<CheckCircle2Icon/>
-					<AlertTitle>Success! You've been subscribed to the newsletter</AlertTitle>
+					<AlertTitle>Thank you!</AlertTitle>
 					<AlertDescription>
-						Thank you for subscribing! You will receive an opt-in confirmation email shortly.
+						You will receive an opt-in confirmation email shortly.
 					</AlertDescription>
 				</Alert>
 			);

@@ -6,7 +6,7 @@ export async function POST(req: Request) {
 		headers: {
 			accept        : 'application/json',
 			'content-type': 'application/json',
-			'api-key'     : process.env.BREVO_API_KEY || ''
+			'api-key'     : process.env.BREVO_API_KEY!
 		},
 		body   : JSON.stringify({
 			email         : data.email,
@@ -16,7 +16,7 @@ export async function POST(req: Request) {
 		})
 	};
 
-	fetch('https://api.brevo.com/v3/contacts/doubleOptinConfirmation', options)
+	await fetch('https://api.brevo.com/v3/contacts/doubleOptinConfirmation', options)
 		.then(res => res.json())
 		.then(res => console.log(res))
 		.catch(err => console.error(err));

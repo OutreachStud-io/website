@@ -1,7 +1,6 @@
 "use client";
 
 import {MediaWrapper} from "@/components/MediaWrapper";
-import {useEffect} from "react";
 import * as React from "react";
 import Image, {StaticImageData} from "next/image";
 import {
@@ -40,6 +39,8 @@ export default function LightboxTrigger(
 	if (slides.length === 0) {
 		return null;
 	}
+
+	console.log(slides);
 
 	const imgExtension = slides[0].src.split('.').pop()?.toLowerCase();
 	const isGif = imgExtension === 'gif';

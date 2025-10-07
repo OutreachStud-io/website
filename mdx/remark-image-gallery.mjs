@@ -68,13 +68,11 @@ export function remarkImageGallery() {
 
 		// Resolve images for all galleries
 		for (const {parent, index, images, displayType, options} of nodesToProcess) {
-			// Images are already resolved by remarkImages plugin
-			// Extract image data from the processed nodes
 			const resolvedImages = images.map(img => ({
-				src: img.url,
-				alt: img.alt || '',
-				title: img.title || '',
-				width: img.data?.hProperties?.width || 1200,
+				src   : img.url,
+				alt   : img.alt || '',
+				title : img.title || '',
+				width : img.data?.hProperties?.width || 1200,
 				height: img.data?.hProperties?.height || 800
 			}));
 

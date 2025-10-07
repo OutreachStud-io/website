@@ -20,7 +20,7 @@ interface ImageGalleryProps {
 	className?: string;
 }
 
-export default function ImageGallery({images, display = 'grid', options, className}: ImageGalleryProps) {
+export function ImageGallery({images, display = 'grid', options, className}: ImageGalleryProps) {
 	let galleryOptions: GalleryOptions = {};
 	if (options) {
 		try {

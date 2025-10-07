@@ -33,7 +33,7 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Volumes/Data/Projects/personal/outreachstudio/website/src/app/features/[...slug]&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Data/Projects/personal/outreachstudio/website/public/media/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -48,18 +48,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/app/features/[...slug]" />
       <recent name="$PROJECT_DIR$/public/media/images" />
+      <recent name="$PROJECT_DIR$/src/app/features/[...slug]" />
       <recent name="$PROJECT_DIR$/src/media/images" />
       <recent name="$PROJECT_DIR$/src/media/images/gifs" />
       <recent name="$PROJECT_DIR$/src/media" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/media/images" />
-      <recent name="$PROJECT_DIR$/public/media/images" />
+      <recent name="$PROJECT_DIR$/mdx" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/app/api/newsletter/subscribe" />
       <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$/src/media/images/features" />
-      <recent name="$PROJECT_DIR$/src/media" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -94,7 +94,7 @@
       <workItem from="1759004106965" duration="645000" />
       <workItem from="1759004762824" duration="241000" />
       <workItem from="1759005029900" duration="38000" />
-      <workItem from="1759005077204" duration="169029000" />
+      <workItem from="1759005077204" duration="184707000" />
     </task>
     <servers />
   </component>

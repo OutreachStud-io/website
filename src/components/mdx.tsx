@@ -12,7 +12,8 @@ import {
 	Blocks,
 	PartyPopper
 } from 'lucide-react';
-import ImageGallery from '@/components/ImageGallery';
+
+import {ImageGallery} from '@/components/ImageGallery';
 
 export const a = function ExternalLink(props: React.ComponentPropsWithoutRef<'a'>) {
 	const href = props.href || '';

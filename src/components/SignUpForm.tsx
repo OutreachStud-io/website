@@ -14,7 +14,7 @@ export function SignUpForm() {
 	const [error, setError] = React.useState(false);
 	const [subscribed, setSubscribed] = React.useState(false);
 
-	const signupUrl = "https://listmonk.outreachstud.io/api/public/subscription";
+	const signupUrl = "/api/newsletter/subscribe";
 
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
@@ -27,10 +27,7 @@ export function SignUpForm() {
 				'Content-Type': 'application/json',
 			},
 			body   : JSON.stringify({
-				"email"     : email,
-				"list_uuids": [
-					"f360b652-581d-4cba-85c3-00699cf69c62"
-				]
+				"email": email,
 			}),
 		}).then(response => {
 			if (response.ok) {

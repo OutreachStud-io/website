@@ -3,17 +3,15 @@ import {Logo} from "@/components/Logo";
 import {Nav} from "@/components/Nav";
 import Link from "next/link";
 import {Intro, IntroFooter} from '@/components/Intro';
+import * as React from "react";
 
 
 export function Layout({children}: { children: React.ReactNode }) {
 	return (
 		<>
-			<FixedSidebar main={<Intro/>} footer={<IntroFooter/>} header={<Link
-				href="/"
-				className={"inline-block mx-auto mt-10 lg:mt-0 lg:mx-0"}
-			>
-				<Logo className="inline-block h-8 w-auto mx-auto"/>
-			</Link>}/>
+			<FixedSidebar main={<Intro/>} footer={<IntroFooter/>} header={<Logo
+				withLink={true} className={"w-auto! h-6 mx-auto mt-10 lg:mt-0 lg:mx-0"}
+			/>}/>
 
 			<Nav/>
 

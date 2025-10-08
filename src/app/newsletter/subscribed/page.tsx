@@ -3,19 +3,19 @@ import {ArrowUpRightIcon} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import {
 	Empty,
-	EmptyContent,
 	EmptyDescription,
 	EmptyHeader,
 	EmptyMedia,
 	EmptyTitle,
 } from "@/components/ui/empty";
+import * as React from "react";
 
 export default function Page() {
 	return (
 		<Empty>
 			<EmptyHeader>
 				<EmptyMedia variant="default">
-					<Logo/>
+					<Logo withLink={true} className={"w-auto! h-6"}/>
 				</EmptyMedia>
 
 				<EmptyTitle className={"text-primary"}>Subscribed!</EmptyTitle>

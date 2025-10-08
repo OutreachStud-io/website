@@ -40,8 +40,6 @@ export default function LightboxTrigger(
 		return null;
 	}
 
-	console.log(slides);
-
 	const imgExtension = slides[0].src.split('.').pop()?.toLowerCase();
 	const isGif = imgExtension === 'gif';
 

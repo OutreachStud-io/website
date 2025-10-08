@@ -55,11 +55,11 @@
       <recent name="$PROJECT_DIR$/src/media" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/media/images" />
       <recent name="$PROJECT_DIR$/mdx" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/app/api/newsletter/subscribe" />
       <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -94,7 +94,7 @@
       <workItem from="1759004106965" duration="645000" />
       <workItem from="1759004762824" duration="241000" />
       <workItem from="1759005029900" duration="38000" />
-      <workItem from="1759005077204" duration="192510000" />
+      <workItem from="1759005077204" duration="194102000" />
     </task>
     <servers />
   </component>

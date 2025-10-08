@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import LogoSVG from '@/media/images/logo-small.svg';
+import LogoSVG from '@/../public/media/images/logo.svg';
 
 export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
 	return (
@@ -8,9 +8,8 @@ export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
 				priority
 				src={LogoSVG}
 				alt="Follow us on Twitter"
-				className={"size-5 opacity-80"}
+				className={"size-5 opacity-80 w-[250px] h-[22.24px]"}
 			/>
-			<b>OutreachStud.io<sup className={"text-[10px] font-mono font-extralight align-middle"}>alpha</sup></b>
 		</div>
 	);
 }

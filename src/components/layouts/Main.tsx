@@ -91,7 +91,7 @@ export function FixedSidebar(
 					</div>
 
 					<div className="relative">
-						<StarField className="top-14 -right-44"/>
+						<StarField className="top-14 -right-44 -z-1"/>
 						{main}
 					</div>
 
@@ -111,12 +111,7 @@ export function Layout({children}: { children: React.ReactNode }) {
 			<FixedSidebar
 				main={<Intro/>}
 				footer={<IntroFooter/>}
-				header={<Link
-					href="/"
-					className={"inline-block mx-auto mt-10 lg:mt-0 lg:mx-0"}
-				>
-					<Logo className="inline-block h-8 w-auto mx-auto"/>
-				</Link>}
+				header={<Logo withLink={true} className={"w-auto! h-6 mx-auto mt-10 lg:mt-0 lg:mx-0"}/>}
 			/>
 
 			<Nav/>

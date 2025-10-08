@@ -2,7 +2,7 @@ import clsx from "clsx";
 import * as React from "react";
 import Link from "next/link";
 
-export function Logo(props) {
+export function Logo(props: React.HTMLAttributes<HTMLElement> & { withLink?: boolean }) {
 	let {className, withLink, ...rest} = props;
 
 	if (withLink == undefined) {
@@ -10,7 +10,7 @@ export function Logo(props) {
 	}
 
 	const Tag = withLink ? Link : 'div' as any;
-	const tagProps = withLink ? { href: "/" } : {};
+	const tagProps = withLink ? {href: "/"} : {};
 
 	return (
 		<Tag

@@ -24,8 +24,8 @@ function DiscordIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export function Intro() {
 	return (
 		<>
-			<div className="mt-14 font-display text-4xl/tight font-light text-foreground leading-10">
-				Open-source outreach{' '}
+			<div className="mt-14 font-display text-3xl/tight font-light text-foreground leading-10">
+				Open-source cold emailing{' '}
 				<span className="text-accent-2">software for marketers</span>
 			</div>
 			<p className="mt-4 text-sm/6 text-foreground/70">

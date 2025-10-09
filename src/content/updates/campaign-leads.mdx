@@ -1,0 +1,26 @@
+export const meta = {
+	date  : '2025-10-09T00:00Z',
+	title : 'Campaign leads',
+	hero  : {src: 'campaign-leads.png'},
+	update: {
+		type: "feature",
+	}
+}
+
+Today I finished the campaign leads page, which allows you to see all
+the leads associated with a specific campaign. You can filter by status/label/sequence/ESP,
+search by name or email, and sort by different columns. You can also select
+multiple leads and perform bulk actions, such as changing their status or
+deleting them.
+
+Each lead has a sequence progress so you can see how far they reached and
+what their current status is by looking at the labels. Labels can be applied
+automatically by letting AI analyze the replies, or manually by you. Some labels
+are sequence terminating, such as `Interested` or `Unsubscribed`, while others
+are just for your own organization, such as `Follow up later`, `Automatic reply`,
+`Out of office`.
+
+These labels will have their own page soon as they will be treated as triggers
+for automations. For example, you could create an automation that moves all leads
+labeled as `Interested` to a new sequence, or sends a notification to your
+team via Slack, webhook or email.

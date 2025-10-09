@@ -25,7 +25,7 @@ export default function Post({post, isPartOfList}: { post: MdxEntry, isPartOfLis
 				<PostTitle post={post} isPartOfList={isPartOfList}/>
 
 				{post.hero && (
-					<MDXComponents.img src={post.hero.src} width={600} height={400}/>
+					<MDXComponents.img src={post.hero.src} width={post.hero.width} height={post.hero.height}/>
 				)}
 
 				<MDXClient

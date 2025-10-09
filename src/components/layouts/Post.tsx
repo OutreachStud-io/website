@@ -1,7 +1,6 @@
 import {FixedSidebar, Timeline} from "@/components/layouts/Main";
 import {Logo} from "@/components/Logo";
 import {Nav} from "@/components/Nav";
-import Link from "next/link";
 import {Intro, IntroFooter} from '@/components/Intro';
 import * as React from "react";
 
